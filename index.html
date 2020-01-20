@@ -22,13 +22,17 @@
 </head>
 <body class="container-fluid">
   <a href="#main-content" class="sr-only sr-only-focusable">content</a>
-  <a href="#primary-naviagiton" class="sr-only sr-only-focusable">main navigation</a>
+  <a href="#primary-navigation" class="sr-only sr-only-focusable">main navigation</a>
   <a href="#sitemap" class="sr-only sr-only-focusable">sitemap</a>
   <a href="#accessibility" class="sr-only sr-only-focusable">accessibility statement</a>
   <!-- <a href="#search" class="sr-only sr-only-focusable">search</a>-->
   <div class="row">
-    <nav id="primary-naviagiton">
-      <!-- put main navigation here, don't change the ID without changing the href of the skip link -->
+    <nav class="navbar navbar-inverse" id="primary-navigation">
+      <div class="container-fluid">
+        <ul class="nav nav-pills nav-justified">
+          <li><a href="/" class="navbar-brand" title="home">Accessible Assets</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
   <header role="banner" class="row">
@@ -42,16 +46,26 @@
     <p class="lead">I came across a <a href="http://assets.cms.gov/resources/framework/3.4.1/Pages/">collection of accessible JS libraries</a> that was actually compiled by the U.S. Governement while I was browsing a <a href="https://www.disability.illinois.edu/academic-support/accessible-it-group/accessiblejslibraries">list accessible JS libraries from the University of Illinois</a>. It was a bit outdated and was full of broken links (the links to assets were all in directory called <code>vendor</code> yet upon download there was no such folder.</p>
     <p class="lead">Additionally, there were folders with no assets at all in them and this doesn't seem to have been updated in about 5 years—Bootstrap 5 is due out soon and the current version of jQuery is 3.4.1 (as of January 2020). Also funny was that in their documentation they included a viewport meta tag with <code>maximum-scale=1.0, user-scalable=no</code> attributes and that in itself causes accessibility problems by preventing users from zooming.</p>
     <p class="lead">As such, I decided to give it a mild update and upload it for anyone that finds it useful.</p>
+    <aside>
+      <figure class="center-block">
+        <img src="https://hubblesite.org/uploads/image_file/image_attachment/31227/STSCI-H-p1906a-f-1028x543.png" alt="Uranus and Neptune as photographed by Hubble Space Telescope">
+        <figcaption>
+          I like astronomy and everything by NASA is in the public domain, so here's a photo of Uranus and Neptune.
+        </figcaption>
+      </figure>
+    </aside>
   </main>
-
+  <hr>
   <footer class="footer row" role="contentinfo">
     <nav class="text-center">
-        <div class="col-xs-6 col-sm-3"><a href="/accessibility/" id="accessibility">Accessibility</a></div>
-        <div class="col-xs-6 col-sm-3"><a href="/privacy-policy/">Privacy Policy</a></div>
-        <div class="clearfix visible-xs-block"></div>
-        <div class="col-xs-6 col-sm-3"><a href="/terms-of-service/">Terms of Service</a></div>
-        <div class="col-xs-6 col-sm-3"><a href="/sitemap/" id="sitemap">Sitemap</a></div>
+      <ul class="nav nav-pills nav-justified">
+        <li><a href="/accessibility/" id="accessibility">Accessibility</a></li>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-of-service/">Terms of Service</a></li>
+        <li><a href="/sitemap/" id="sitemap">Sitemap</a></li>
+      </ul>
     </nav>
+    <hr>
     <div class="text-center">
       <div class="col-xs-6 cols-sm-6"> &copy;2020 </div><div class="col-xs-6 cols-sm-6"> Phone: <a href="tel:+15555555555">(555) 555-5555</a></div>
     </div>
