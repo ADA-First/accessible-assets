@@ -74,7 +74,7 @@ That is a bad practice so in the `main.css` file, I consolidated them into a few
 
 There are tools that can autmate this because really, each property should only be set once but I'm not actually putting this into production just demonstrating and explaining here so I didn't mess with it too much.
 
-Here's a list of all the files in this repo:
+### Assets in this repo:
 ```
 accessibility/accessibility.min.js
 backbone/backbone.js
