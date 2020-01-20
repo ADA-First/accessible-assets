@@ -1,6 +1,6 @@
-#Accessibile Assets
+# Accessibile Assets
 ## Updated
-###(sorta)
+### (sorta)
 We have an accessibility auditing application called the [Website Accessibility Checker](https://compliance.adafirst.org) that is based on an open-source project called the [Functional Accessibility Evaluator](https://github.com/opena11y/fae2), which uses Bootstrap 3.x.
 
 While working on that, I came across a [collection of accessible JS libraries](https://assets.cms.gov/resources/framework/3.4.1/Pages/) that was actually compiled by the gov't while I was browsing a [list accessible JS libraries from the University of Illinois](https://www.disability.illinois.edu/academic-support/accessible-it-group/accessiblejslibraries).
