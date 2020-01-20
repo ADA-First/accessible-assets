@@ -28,36 +28,40 @@
   <!-- <a href="#search" class="sr-only sr-only-focusable">search</a>-->
   <div class="row">
     <nav class="navbar navbar-inverse" id="primary-navigation">
-      <div class="container-fluid">
+      <div class="container">
         <ul class="nav nav-pills nav-justified">
           <li><a href="/" class="navbar-brand" title="home">Accessible Assets</a></li>
         </ul>
       </div>
     </nav>
   </div>
-  <header role="banner" class="row">
+  <header role="banner" class="container">
+    <div class="row">
       <!-- put header content here -->
       <!-- senatically, one could argue that things at the top of every page, like the navigation should go in the header -->
       <!-- conversely, you could also argue that content like the H1, or lead paragraphs shoudl go in the header -->
       <!-- I think in a page like this, promo, a slider, or a Hero/Jumbotron would be ideal but since I don't have one I'm leaving it empty -->
+    </div>
   </header>
-  <main role="main" aria-label="main section" id="main-content" class="row">
-    <h1>The Accessible Assets Framework <small>(Updated, <small>sorta</small>)</small></h1>
-    <p class="lead">I came across a <a href="http://assets.cms.gov/resources/framework/3.4.1/Pages/">collection of accessible JS libraries</a> that was actually compiled by the U.S. Governement while I was browsing a <a href="https://www.disability.illinois.edu/academic-support/accessible-it-group/accessiblejslibraries">list accessible JS libraries from the University of Illinois</a>. It was a bit outdated and was full of broken links (the links to assets were all in directory called <code>vendor</code> yet upon download there was no such folder.</p>
-    <p class="lead">Additionally, there were folders with no assets at all in them and this doesn't seem to have been updated in about 5 years—Bootstrap 5 is due out soon and the current version of jQuery is 3.4.1 (as of January 2020). Also funny was that in their documentation they included a viewport meta tag with <code>maximum-scale=1.0, user-scalable=no</code> attributes and that in itself causes accessibility problems by preventing users from zooming.</p>
-    <p class="lead">As such, I decided to give it a mild update and upload it for anyone that finds it useful.</p>
-    <aside>
-      <figure class="center-block">
-        <img src="https://hubblesite.org/uploads/image_file/image_attachment/31227/STSCI-H-p1906a-f-1028x543.png" alt="Uranus and Neptune as photographed by Hubble Space Telescope">
-        <figcaption>
+  <main role="main" aria-label="main section" id="main-content" class="container">
+    <div class="row">
+      <h1>The Accessible Assets Framework <small>(Updated, <small>sorta</small>)</small></h1>
+      <p class="lead">I came across a <a href="http://assets.cms.gov/resources/framework/3.4.1/Pages/">collection of accessible JS libraries</a> that was actually compiled by the U.S. Governement while I was browsing a <a href="https://www.disability.illinois.edu/academic-support/accessible-it-group/accessiblejslibraries">list accessible JS libraries from the University of Illinois</a>. It was a bit outdated and was full of broken links (the links to assets were all in directory called <code>vendor</code> yet upon download there was no such folder.</p>
+      <p>Additionally, there were folders with no assets at all in them and this doesn't seem to have been updated in about 5 years—Bootstrap 5 is due out soon and the current version of jQuery is 3.4.1 (as of January 2020). Also funny was that in their documentation they included a viewport meta tag with <code>maximum-scale=1.0, user-scalable=no</code> attributes and that in itself causes accessibility problems by preventing users from zooming.</p>
+      <p>As such, I decided to give it a mild update and upload it for anyone that finds it useful.</p>
+    </div>
+    <aside class="row">
+      <figure>
+        <img src="https://hubblesite.org/uploads/image_file/image_attachment/31227/STSCI-H-p1906a-f-1028x543.png" alt="Uranus and Neptune as photographed by Hubble Space Telescope" style="max-width:98%" class="center-block">
+        <figcaption style="padding:1em;">
           I like astronomy and everything by NASA is in the public domain, so here's a photo of Uranus and Neptune.
         </figcaption>
       </figure>
     </aside>
   </main>
   <hr>
-  <footer class="footer row" role="contentinfo">
-    <nav class="text-center">
+  <footer class="footer container" role="contentinfo">
+    <nav class="text-center row">
       <ul class="nav nav-pills nav-justified">
         <li><a href="/accessibility/" id="accessibility">Accessibility</a></li>
         <li><a href="/privacy-policy/">Privacy Policy</a></li>
@@ -66,7 +70,7 @@
       </ul>
     </nav>
     <hr>
-    <div class="text-center">
+    <div class="text-center row">
       <div class="col-xs-6 cols-sm-6"> &copy;2020 </div><div class="col-xs-6 cols-sm-6"> Phone: <a href="tel:+15555555555">(555) 555-5555</a></div>
     </div>
   </footer>
