@@ -13,7 +13,7 @@ I also found it amusing that in their documentation they included a viewport met
 
 As such, I decided to give it a mild update and upload it for anyone that finds it useful.
 
-##How To Use These Assets
+## How To Use Accessible Assets
 
 First of all, use them as a **place to start your research**.
 
@@ -36,7 +36,7 @@ The `index.html` file I udpated slightly to illustrate what I consider best prac
 11. I go back and forth about whether to use `lang="en"` or `lang="en-US"` as this project does. Brittish English and American English are so similar, I doubt it matters but I did make it a point to add `dir="ltr"` for good measure as English is always read "left to right".
 12. Added an Accessibility Widget that allows users to customize the appearance to suit their needs.
 
-##Warning About The Gov't Documentation
+## Warning About The Gov't Documentation
 The code below is taken from the gov't website about how to use these assets, **take it with a grain of salt** using `@ imports` in CSS is really slow. Not only does your browser have to parse and excute but it add HTTP requests and those will slow your site down considerably. If you don't mind sluggish loading in development for testing they are fine but once you have the component finalized for production, they should be concatenated into as few files as possible (for both CSS, Javascript and any other assets).
 
 Many if not most of the assets include SASS stylesheets which get compiled into CSS. Ideally, you should work with the SASS stylesheets to save yourself time and let it automatically compile the components you need into a single stylesheet..anything you are not using doesn't need to be in the files for production.
@@ -63,7 +63,7 @@ Many if not most of the assets include SASS stylesheets which get compiled into 
   @import url("../globalassets/styles/widgets/modalstyles.css");
 ```
 
-###Downside to SASS
+### Downside to SASS
 Bootstrap now uses SASS (the SCSS syntax, I believe, which I prefer) but if you go an look at the compiled, minified file in `bootstrap-3.3.1/3.3.1/css/bootstrap.min.css` and you do a search for `}}` you'll notice it occurs 71 times. This means that, a few exceptions aside, there are 71 media queries in that file. That is going to be hard on a browser to parse because the rules aren't neatly ordered a placed together in a single media query.
 
 Instead, there are probably 20 media queries for a screen greater than 768px wide. This makes it hard to work on, hard to red a slow to parse and can have unintended consequences because if 2 selctors have the same wight, the later on wins.
