@@ -17,7 +17,15 @@ As such, I decided to give it a mild update and upload it for anyone that finds 
 
 First of all, use them as a **place to start your research**.
 
-By that I mean check if there is a more current version of any asset you find here. As noted above, many of these assets are out-if-date and accessibility has become increasingly important in recent years (legally speaking. In 2015 when this was released there were about 60 lawsuits over web accessibility filed in U.S. Federal Courts in 2019 there were over 2,500).
+I more or less downloaded the zip file from the **Assets Framework** webpage, and looked through it. I then renamed some of the directories to reflect the versin numbers and other small changes, updated the paths, added the `assessibility` directory and script, added a current version of jQuery, added and customized the `index.html` and `README.md` files and about it.
+
+I have never used most of the libraries contained in this repo and I didn't check them or verify that they are accessibile.
+
+I'm primarily a marketer and accessibility advocate, not a developer, so I probably can't offer much support if any of these scripts don't work for you.
+
+I suspect that the Github bots are going to start bothering me with update and security notifications and if they do, I will have to archive this as it is primarily for reference, not for current use.
+
+When using these assets, check if there is a more current version of any libraries that you find here. As noted above, many of these assets are out-if-date and accessibility has become increasingly important in recent years (legally speaking. In 2015 when this was released there were about 60 lawsuits over web accessibility filed in U.S. Federal Courts in 2019 there were over 2,500).
 
 The files downloaded from the government's website didn't include an `index.html` file, nor a README so I added them.
 
