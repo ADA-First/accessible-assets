@@ -1140,7 +1140,7 @@
       destroy()
       {
         let e = a.deployedObjects.getAll();
-        for ( let tofe )
+        for (let t of e)
         {
           let e = document.querySelector( t );
           e && e.parentElement.removeChild( e )
